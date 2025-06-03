@@ -1,0 +1,85 @@
+***Starting server on port 54263 ***
+Loading net-file from 'grid.net.xml' ... done (16ms).
+Loading additional-files from 'detectores.add.xml' ... done (41ms).
+Loading route-files incrementally from 'traffic.rou.xml'
+Loading done.
+Simulation started with time: 0.00.
+Warning: Teleporting vehicle 'F_cars_LoopOuter.0'; waited too long (wrong lane), lane='C0D0_0', time=344.00.
+Warning: Vehicle 'F_cars_LoopOuter.0' ends teleporting on edge 'D0D1', time=344.00.
+Warning: Teleporting vehicle 'F_cars_LoopOuter.2'; waited too long (wrong lane), lane='C0D0_0', time=668.00.
+Warning: Vehicle 'F_cars_LoopOuter.2' ends teleporting on edge 'D0D1', time=668.00.
+Warning: Teleporting vehicle 'F_cars_LoopOuter.0'; waited too long (wrong lane), lane='D2D3_0', time=731.00.
+Warning: Vehicle 'F_cars_LoopOuter.0' ends teleporting on edge 'D3C3', time=731.00.
+Warning: Teleporting vehicle 'F_cars_LoopOuter.1'; waited too long (wrong lane), lane='C0D0_0', time=975.00.
+Warning: Vehicle 'F_cars_LoopOuter.1' ends teleporting on edge 'D0D1', time=975.00.
+Warning: Teleporting vehicle 'F_cars_LoopOuter.2'; waited too long (wrong lane), lane='D2D3_0', time=1036.00.
+Warning: Vehicle 'F_cars_LoopOuter.2' ends teleporting on edge 'D3C3', time=1036.00.
+Warning: Teleporting vehicle 'F_cars_LoopOuter.0'; waited too long (wrong lane), lane='B3A3_0', time=1104.00.
+Warning: Vehicle 'F_cars_LoopOuter.0' ends teleporting on edge 'A3A2', time=1104.00.
+Warning: Teleporting vehicle 'F_cars_LoopOuter.6'; waited too long (wrong lane), lane='C0D0_0', time=1281.00.
+Warning: Vehicle 'F_cars_LoopOuter.6' ends teleporting on edge 'D0D1', time=1281.00.
+Warning: Teleporting vehicle 'F_cars_LoopOuter.1'; waited too long (wrong lane), lane='D2D3_0', time=1361.00.
+Warning: Vehicle 'F_cars_LoopOuter.1' ends teleporting on edge 'D3C3', time=1361.00.
+Warning: Teleporting vehicle 'F_cars_LoopOuter.2'; waited too long (wrong lane), lane='B3A3_0', time=1409.00.
+Warning: Vehicle 'F_cars_LoopOuter.2' ends teleporting on edge 'A3A2', time=1409.00.
+Warning: Teleporting vehicle 'F_cars_LoopOuter.3'; waited too long (wrong lane), lane='C0D0_0', time=1587.00.
+Warning: Vehicle 'F_cars_LoopOuter.3' ends teleporting on edge 'D0D1', time=1587.00.
+Warning: Teleporting vehicle 'F_cars_LoopOuter.6'; waited too long (wrong lane), lane='D2D3_0', time=1667.00.
+Warning: Vehicle 'F_cars_LoopOuter.6' ends teleporting on edge 'D3C3', time=1667.00.
+Warning: Teleporting vehicle 'F_cars_LoopOuter.1'; waited too long (wrong lane), lane='B3A3_0', time=1733.00.
+Warning: Vehicle 'F_cars_LoopOuter.1' ends teleporting on edge 'A3A2', time=1733.00.
+Warning: Teleporting vehicle 'F_cars_LoopOuter.8'; waited too long (wrong lane), lane='C0D0_0', time=1892.00.
+Warning: Vehicle 'F_cars_LoopOuter.8' ends teleporting on edge 'D0D1', time=1892.00.
+Warning: Teleporting vehicle 'F_cars_LoopOuter.3'; waited too long (wrong lane), lane='D2D3_0', time=1971.00.
+Warning: Vehicle 'F_cars_LoopOuter.3' ends teleporting on edge 'D3C3', time=1971.00.
+Warning: Teleporting vehicle 'F_cars_LoopOuter.6'; waited too long (wrong lane), lane='B3A3_0', time=2039.00.
+Warning: Vehicle 'F_cars_LoopOuter.6' ends teleporting on edge 'A3A2', time=2039.00.
+Warning: Teleporting vehicle 'F_cars_LoopOuter.4'; waited too long (wrong lane), lane='C0D0_0', time=2198.00.
+Warning: Vehicle 'F_cars_LoopOuter.4' ends teleporting on edge 'D0D1', time=2198.00.
+Warning: Teleporting vehicle 'F_cars_LoopOuter.8'; waited too long (wrong lane), lane='D2D3_0', time=2275.00.
+Warning: Vehicle 'F_cars_LoopOuter.8' ends teleporting on edge 'D3C3', time=2275.00.
+Warning: Teleporting vehicle 'F_cars_LoopOuter.3'; waited too long (wrong lane), lane='B3A3_0', time=2343.00.
+Warning: Vehicle 'F_cars_LoopOuter.3' ends teleporting on edge 'A3A2', time=2343.00.
+Warning: Teleporting vehicle 'F_cars_LoopOuter.5'; waited too long (wrong lane), lane='C0D0_0', time=2503.00.
+Warning: Vehicle 'F_cars_LoopOuter.5' ends teleporting on edge 'D0D1', time=2503.00.
+Warning: Teleporting vehicle 'F_cars_LoopOuter.4'; waited too long (wrong lane), lane='D2D3_0', time=2580.00.
+Warning: Vehicle 'F_cars_LoopOuter.4' ends teleporting on edge 'D3C3', time=2580.00.
+Warning: Teleporting vehicle 'F_cars_LoopOuter.8'; waited too long (wrong lane), lane='B3A3_0', time=2650.00.
+Warning: Vehicle 'F_cars_LoopOuter.8' ends teleporting on edge 'A3A2', time=2650.00.
+Warning: Teleporting vehicle 'F_cars_LoopOuter.7'; waited too long (wrong lane), lane='C0D0_0', time=2808.00.
+Warning: Vehicle 'F_cars_LoopOuter.7' ends teleporting on edge 'D0D1', time=2808.00.
+Warning: Teleporting vehicle 'F_cars_LoopOuter.5'; waited too long (wrong lane), lane='D2D3_0', time=2895.00.
+Warning: Vehicle 'F_cars_LoopOuter.5' ends teleporting on edge 'D3C3', time=2895.00.
+Warning: Teleporting vehicle 'F_cars_LoopOuter.4'; waited too long (wrong lane), lane='B3A3_0', time=2955.00.
+Warning: Vehicle 'F_cars_LoopOuter.4' ends teleporting on edge 'A3A2', time=2955.00.
+Warning: Teleporting vehicle 'F_cars_LoopOuter.9'; waited too long (wrong lane), lane='C0D0_0', time=3112.00.
+Warning: Vehicle 'F_cars_LoopOuter.9' ends teleporting on edge 'D0D1', time=3112.00.
+Warning: Teleporting vehicle 'F_cars_LoopOuter.7'; waited too long (wrong lane), lane='D2D3_0', time=3199.00.
+Warning: Vehicle 'F_cars_LoopOuter.7' ends teleporting on edge 'D3C3', time=3199.00.
+Warning: Teleporting vehicle 'F_cars_LoopOuter.5'; waited too long (wrong lane), lane='B3A3_0', time=3284.00.
+Warning: Vehicle 'F_cars_LoopOuter.5' ends teleporting on edge 'A3A2', time=3284.00.
+Warning: Teleporting vehicle 'F_cars_LoopOuter.12'; waited too long (wrong lane), lane='C0D0_0', time=3416.00.
+Warning: Vehicle 'F_cars_LoopOuter.12' ends teleporting on edge 'D0D1', time=3416.00.
+Warning: Teleporting vehicle 'F_cars_LoopOuter.9'; waited too long (wrong lane), lane='D2D3_0', time=3504.00.
+Warning: Vehicle 'F_cars_LoopOuter.9' ends teleporting on edge 'D3C3', time=3504.00.
+Warning: Teleporting vehicle 'F_cars_LoopOuter.7'; waited too long (wrong lane), lane='B3A3_0', time=3590.00.
+Warning: Vehicle 'F_cars_LoopOuter.7' ends teleporting on edge 'A3A2', time=3590.00.
+Simulation ended at time: 3600.00.
+Reason: TraCI requested termination.
+Performance:
+ Duration: 75.95s
+ TraCI-Duration: 51.96s
+ Real time factor: 47.3977
+ UPS: 1938.435611
+Vehicles:
+ Inserted: 341 (Loaded: 362)
+ Running: 54
+ Waiting: 13
+ Teleports: 30 (Wrong Lane: 30)
+Statistics (avg of 287):
+ RouteLength: 643.85
+ Speed: 8.68
+ Duration: 144.68
+ WaitingTime: 78.26
+ TimeLoss: 88.16
+ DepartDelay: 12.45

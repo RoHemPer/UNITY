@@ -1,0 +1,53 @@
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <inductionLoop id="B0_W_DET" lane="A0B0_0" pos="150" freq="100" file="detector_output.xml"/>
+    <inductionLoop id="B0_E_DET" lane="C0B0_0" pos="150" freq="100" file="detector_output.xml"/>
+    <inductionLoop id="B0_S_DET" lane="B1B0_0" pos="150" freq="100" file="detector_output.xml"/>
+
+    <inductionLoop id="C0_W_DET" lane="B0C0_0" pos="150" freq="100" file="detector_output.xml"/>
+    <inductionLoop id="C0_E_DET" lane="D0C0_0" pos="150" freq="100" file="detector_output.xml"/>
+    <inductionLoop id="C0_S_DET" lane="C1C0_0" pos="150" freq="100" file="detector_output.xml"/>
+
+    <inductionLoop id="A1_N_DET" lane="A0A1_0" pos="150" freq="100" file="detector_output.xml"/>
+    <inductionLoop id="A1_S_DET" lane="A2A1_0" pos="150" freq="100" file="detector_output.xml"/>
+    <inductionLoop id="A1_E_DET" lane="B1A1_0" pos="150" freq="100" file="detector_output.xml"/>
+
+    <inductionLoop id="B1_W_DET" lane="A1B1_0" pos="150" freq="100" file="detector_output.xml"/>
+    <inductionLoop id="B1_E_DET" lane="C1B1_0" pos="150" freq="100" file="detector_output.xml"/>
+    <inductionLoop id="B1_N_DET" lane="B0B1_0" pos="150" freq="100" file="detector_output.xml"/>
+    <inductionLoop id="B1_S_DET" lane="B2B1_0" pos="150" freq="100" file="detector_output.xml"/>
+
+    <inductionLoop id="C1_W_DET" lane="B1C1_0" pos="150" freq="100" file="detector_output.xml"/>
+    <inductionLoop id="C1_E_DET" lane="D1C1_0" pos="150" freq="100" file="detector_output.xml"/>
+    <inductionLoop id="C1_N_DET" lane="C0C1_0" pos="150" freq="100" file="detector_output.xml"/>
+    <inductionLoop id="C1_S_DET" lane="C2C1_0" pos="150" freq="100" file="detector_output.xml"/>
+
+    <inductionLoop id="D1_W_DET" lane="C1D1_0" pos="150" freq="100" file="detector_output.xml"/>
+    <inductionLoop id="D1_N_DET" lane="D0D1_0" pos="150" freq="100" file="detector_output.xml"/>
+    <inductionLoop id="D1_S_DET" lane="D2D1_0" pos="150" freq="100" file="detector_output.xml"/>
+
+    <inductionLoop id="A2_N_DET" lane="A1A2_0" pos="150" freq="100" file="detector_output.xml"/>
+    <inductionLoop id="A2_S_DET" lane="A3A2_0" pos="150" freq="100" file="detector_output.xml"/>
+    <inductionLoop id="A2_E_DET" lane="B2A2_0" pos="150" freq="100" file="detector_output.xml"/>
+
+    <inductionLoop id="B2_W_DET" lane="A2B2_0" pos="150" freq="100" file="detector_output.xml"/>
+    <inductionLoop id="B2_E_DET" lane="C2B2_0" pos="150" freq="100" file="detector_output.xml"/>
+    <inductionLoop id="B2_N_DET" lane="B1B2_0" pos="150" freq="100" file="detector_output.xml"/>
+    <inductionLoop id="B2_S_DET" lane="B3B2_0" pos="150" freq="100" file="detector_output.xml"/>
+
+    <inductionLoop id="C2_W_DET" lane="B2C2_0" pos="150" freq="100" file="detector_output.xml"/>
+    <inductionLoop id="C2_E_DET" lane="D2C2_0" pos="150" freq="100" file="detector_output.xml"/>
+    <inductionLoop id="C2_N_DET" lane="C1C2_0" pos="150" freq="100" file="detector_output.xml"/>
+    <inductionLoop id="C2_S_DET" lane="C3C2_0" pos="150" freq="100" file="detector_output.xml"/>
+
+    <inductionLoop id="D2_W_DET" lane="C2D2_0" pos="150" freq="100" file="detector_output.xml"/>
+    <inductionLoop id="D2_N_DET" lane="D1D2_0" pos="150" freq="100" file="detector_output.xml"/>
+    <inductionLoop id="D2_S_DET" lane="D3D2_0" pos="150" freq="100" file="detector_output.xml"/>
+
+    <inductionLoop id="B3_W_DET" lane="A3B3_0" pos="150" freq="100" file="detector_output.xml"/>
+    <inductionLoop id="B3_E_DET" lane="C3B3_0" pos="150" freq="100" file="detector_output.xml"/>
+    <inductionLoop id="B3_N_DET" lane="B2B3_0" pos="150" freq="100" file="detector_output.xml"/>
+
+    <inductionLoop id="C3_W_DET" lane="B3C3_0" pos="150" freq="100" file="detector_output.xml"/>
+    <inductionLoop id="C3_E_DET" lane="D3C3_0" pos="150" freq="100" file="detector_output.xml"/>
+    <inductionLoop id="C3_N_DET" lane="C2C3_0" pos="150" freq="100" file="detector_output.xml"/>
+</additional>
