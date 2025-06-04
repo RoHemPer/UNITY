@@ -1,0 +1,578 @@
+import os
+import sys
+import traci
+import random
+import json
+
+# --- Configuração do SUMO_HOME ---
+if 'SUMO_HOME' in os.environ:
+    tools = os.path.join(os.environ['SUMO_HOME'], 'tools')
+    sys.path.append(tools)
+    print(f"SUMO_HOME configurado: {os.environ['SUMO_HOME']}")
+else:
+    sys.exit("ERRO: A variável de ambiente SUMO_HOME não está definida.")
+
+# --- Parâmetros de Configuração da Simulação ---
+SUMO_CONFIG_FILE = "grid.sumocfg" 
+SUMO_BINARY = "sumo-gui" 
+
+SIMULATION_TOTAL_DURATION_SECONDS = 3600 
+SIMULATION_EXTENSION_INCREMENT_SECONDS = 4000
+PROMPT_FOR_SIMULATION_EXTENSION = True
+
+
+# --- IDs dos Semáforos ---
+TLS_IDS = ["A1", "A2", "B0", "B1", "B2", "B3", "C0", "C1", "C2", "C3", "D1", "D2"]
+
+# --- Mapeamento de Detectores ---
+DETECTOR_MAPPING = {
+    "B0": {"W": "B0_W_DET", "E": "B0_E_DET", "S": "B0_S_DET"}, "C0": {"W": "C0_W_DET", "E": "C0_E_DET", "S": "C0_S_DET"},
+    "A1": {"N": "A1_N_DET", "S": "A1_S_DET", "E": "A1_E_DET"}, "B1": {"N": "B1_N_DET", "S": "B1_S_DET", "E": "B1_E_DET", "W": "B1_W_DET"},
+    "C1": {"N": "C1_N_DET", "S": "C1_S_DET", "E": "C1_E_DET", "W": "C1_W_DET"}, "D1": {"N": "D1_N_DET", "S": "D1_S_DET", "W": "D1_W_DET"},
+    "A2": {"N": "A2_N_DET", "S": "A2_S_DET", "E": "A2_E_DET"}, "B2": {"N": "B2_N_DET", "S": "B2_S_DET", "E": "B2_E_DET", "W": "B2_W_DET"},
+    "C2": {"N": "C2_N_DET", "S": "C2_S_DET", "E": "C2_E_DET", "W": "C2_W_DET"}, "D2": {"N": "D2_N_DET", "S": "D2_S_DET", "W": "D2_W_DET"},
+    "B3": {"N": "B3_N_DET", "W": "B3_W_DET", "E": "B3_E_DET"}, "C3": {"N": "C3_N_DET", "W": "C3_W_DET", "E": "C3_E_DET"}
+}
+
+# --- Parâmetros de Tempo dos Semáforos (segundos) ---
+TIME_GREEN_MIN = 15
+TIME_GREEN_NORMAL_BASE = 30
+TIME_GREEN_EXTENDED_BASE = 50
+TIME_YELLOW_DURATION = 3
+TIME_ALL_RED_DURATION = 2
+VEHICLE_THRESHOLD_FOR_EXTENSION = 3 
+VEHICLE_DIFFERENCE_FOR_PRESSURE_SWITCH = 5
+COORDINATOR_INTERVAL = 10
+MAX_PRIORITY_FACTOR_EFFECT = 0.6
+# --- Bônus para fases Verticais (Norte-Sul, assumidas como grupo de índice 1) ---
+VERTICAL_ADVANTAGE_BONUS = 3  # N-S mantém verde mesmo se conflitante tiver até X veículos a mais (ou N-S tiver X a menos)
+NS_GREEN_TIME_BONUS_EXTENDED = 10 # Segundos extras para o tempo de verde estendido N-S
+NS_GREEN_TIME_BONUS_NORMAL = 5   # Segundos extras para o tempo de verde normal N-S
+
+
+AVAILABLE_ROUTE_IDS = []
+SIMULATION_DATA = []
+vehicle_traversal_counts = {}
+
+class TrafficLightController:
+    def __init__(self, tls_id, detector_ids_for_tls):
+        self.tls_id = tls_id
+        self.detectors = detector_ids_for_tls
+        self.time_in_current_phase = 0
+        self.valid_program = False
+        self.main_green_phase_indices = []
+        self.yellow_after_green = {}
+        self.all_red_after_yellow = {}
+        self.current_main_green_group_idx_ptr = 0
+        self.logic_is_alternating = False
+        self.veh_counts_per_approach = {"N":0, "S":0, "E":0, "W":0}
+        self.accumulated_per_approach = {"N":0, "S":0, "E":0, "W":0}
+        self.priority_factor = 0.0
+
+        try:
+            logics = traci.trafficlight.getAllProgramLogics(self.tls_id)
+            if not logics:
+                print(f"ALERTA SEVERO: Nenhuma lógica de programa encontrada para TLS {self.tls_id}.")
+                return
+
+            self.logic = logics[0]
+            self.all_phases_definitions = self.logic.phases
+            self.num_total_phases = len(self.all_phases_definitions)
+            self.current_phase_index = traci.trafficlight.getPhase(self.tls_id)
+            self.valid_program = True
+
+            if self.num_total_phases > 0:
+                potential_greens = []
+                for i, phase_def in enumerate(self.all_phases_definitions):
+                    is_green_like = 'g' in phase_def.state.lower() and 'y' not in phase_def.state.lower()
+                    if is_green_like and phase_def.duration >= TIME_GREEN_MIN - 5 :
+                        potential_greens.append({"index": i, "duration": phase_def.duration, "state": phase_def.state})
+                
+                potential_greens.sort(key=lambda x: x["duration"], reverse=True)
+
+                if len(potential_greens) >= 1:
+                    self.main_green_phase_indices.append(potential_greens[0]["index"])
+                if len(potential_greens) >= 2 and potential_greens[0]["index"] != potential_greens[1]["index"]:
+                    self.main_green_phase_indices.append(potential_greens[1]["index"])
+                
+                if not self.main_green_phase_indices:
+                    self.main_green_phase_indices = [0] 
+                    if self.num_total_phases > 1:
+                        second_candidate = (self.num_total_phases // 2) 
+                        if second_candidate != self.main_green_phase_indices[0]:
+                                self.main_green_phase_indices.append(second_candidate)
+                    # print(f"AVISO TLS {self.tls_id}: Poucas fases verdes longas. Usando fallback: {self.main_green_phase_indices}.")
+
+                for green_idx in self.main_green_phase_indices:
+                    found_yellow = False
+                    for offset in range(1, self.num_total_phases // 2 + 2): 
+                        yellow_idx_candidate = (green_idx + offset) % self.num_total_phases
+                        state_check = self.all_phases_definitions[yellow_idx_candidate].state.lower()
+                        duration_check = self.all_phases_definitions[yellow_idx_candidate].duration
+                        if 'y' in state_check and 'g' not in state_check and duration_check <= TIME_YELLOW_DURATION + 2:
+                            self.yellow_after_green[green_idx] = yellow_idx_candidate
+                            found_yellow = True
+                            all_red_idx_candidate = (yellow_idx_candidate + 1) % self.num_total_phases
+                            phase_def_all_red = self.all_phases_definitions[all_red_idx_candidate]
+                            if 'g' not in phase_def_all_red.state.lower() and \
+                               'y' not in phase_def_all_red.state.lower() and \
+                               phase_def_all_red.duration <= TIME_ALL_RED_DURATION + 2:
+                                self.all_red_after_yellow[yellow_idx_candidate] = all_red_idx_candidate
+                            else: self.all_red_after_yellow[yellow_idx_candidate] = None 
+                            break 
+                    if not found_yellow: self.yellow_after_green[green_idx] = None
+            
+            self.logic_is_alternating = len(self.main_green_phase_indices) > 1
+            
+            if self.main_green_phase_indices:
+                initial_target_phase = self.main_green_phase_indices[0]
+                if self.current_phase_index != initial_target_phase:
+                    traci.trafficlight.setPhase(self.tls_id, initial_target_phase)
+                    self.current_phase_index = initial_target_phase
+                
+                try:
+                    self.current_main_green_group_idx_ptr = self.main_green_phase_indices.index(self.current_phase_index)
+                except ValueError: 
+                    self.current_main_green_group_idx_ptr = 0 
+                    if self.main_green_phase_indices and self.current_phase_index != self.main_green_phase_indices[0]:
+                        traci.trafficlight.setPhase(self.tls_id, self.main_green_phase_indices[0])
+                        self.current_phase_index = self.main_green_phase_indices[0]
+                self.time_in_current_phase = 0
+        except traci.TraCIException as e:
+            print(f"ERRO TLS {self.tls_id}: Falha na inicialização do controlador TraCI: {e}")
+            self.valid_program = False
+
+    def get_active_green_phase_index(self):
+        if not self.valid_program or not self.main_green_phase_indices: return None
+        if self.current_main_green_group_idx_ptr >= len(self.main_green_phase_indices):
+            self.current_main_green_group_idx_ptr = 0
+        return self.main_green_phase_indices[self.current_main_green_group_idx_ptr]
+
+    def get_demand_for_active_group(self):
+        if not self.valid_program or not self.main_green_phase_indices: return 0
+        ptr = self.current_main_green_group_idx_ptr
+        if ptr >= len(self.main_green_phase_indices): ptr = 0
+        
+        # Assume ptr 0 = E-W, ptr 1 = N-S
+        if ptr == 0: 
+            return self.accumulated_per_approach.get("W",0) + self.accumulated_per_approach.get("E",0)
+        elif self.logic_is_alternating and ptr == 1:
+            return self.accumulated_per_approach.get("N",0) + self.accumulated_per_approach.get("S",0)
+        return self.accumulated_per_approach.get("W",0) + self.accumulated_per_approach.get("E",0)
+
+    def get_demand_for_conflicting_group(self):
+        if not self.valid_program or not self.logic_is_alternating or len(self.main_green_phase_indices) < 2: return 0
+        conflicting_group_ptr = (self.current_main_green_group_idx_ptr + 1) % len(self.main_green_phase_indices)
+        # Assume ptr 0 = E-W, ptr 1 = N-S
+        if conflicting_group_ptr == 0:
+            return self.accumulated_per_approach.get("W",0) + self.accumulated_per_approach.get("E",0)
+        elif conflicting_group_ptr == 1:
+            return self.accumulated_per_approach.get("N",0) + self.accumulated_per_approach.get("S",0)
+        return 0
+    
+    def get_pressure_metric(self): 
+        if not self.valid_program or not self.main_green_phase_indices or not self.logic_is_alternating: 
+            return 0
+        return self.get_demand_for_conflicting_group()
+    
+    def set_priority_factor(self, factor):
+        self.priority_factor = max(-0.8, min(0.8, factor))
+
+    def update_detectors(self):
+        if not self.valid_program: return
+        for direction_key, det_id in self.detectors.items():
+            try:
+                self.veh_counts_per_approach[direction_key] = traci.inductionloop.getLastStepVehicleNumber(det_id)
+            except traci.TraCIException:
+                self.veh_counts_per_approach[direction_key] = 0
+        
+        active_green_idx = self.get_active_green_phase_index()
+        if active_green_idx is None: return
+
+        if self.current_phase_index == active_green_idx:
+            if self.current_main_green_group_idx_ptr == 0: # E-W
+                self.accumulated_per_approach["W"] += self.veh_counts_per_approach.get("W",0)
+                self.accumulated_per_approach["E"] += self.veh_counts_per_approach.get("E",0)
+            elif self.logic_is_alternating and self.current_main_green_group_idx_ptr == 1: # N-S
+                self.accumulated_per_approach["N"] += self.veh_counts_per_approach.get("N",0)
+                self.accumulated_per_approach["S"] += self.veh_counts_per_approach.get("S",0)
+
+    def should_terminate_current_green(self):
+        if not self.valid_program or not self.main_green_phase_indices or self.get_active_green_phase_index() is None:
+            return True 
+        if self.time_in_current_phase < TIME_GREEN_MIN:
+            return False
+
+        demand_on_current = self.get_demand_for_active_group()
+        demand_on_conflicting = self.get_demand_for_conflicting_group() if self.logic_is_alternating else -1
+        
+        is_vertical_phase_group = (self.logic_is_alternating and self.current_main_green_group_idx_ptr == 1)
+
+        holds_advantage = False
+        if not self.logic_is_alternating:
+            holds_advantage = True 
+        else:
+            if is_vertical_phase_group: # Vertical (N-S, ptr 1)
+                holds_advantage = demand_on_current > (demand_on_conflicting - VERTICAL_ADVANTAGE_BONUS)
+            else: # Horizontal (L-O, ptr 0)
+                holds_advantage = demand_on_current > demand_on_conflicting
+        
+        if demand_on_current > VEHICLE_THRESHOLD_FOR_EXTENSION and holds_advantage:
+            current_extended_base = TIME_GREEN_EXTENDED_BASE
+            if is_vertical_phase_group:
+                 current_extended_base += NS_GREEN_TIME_BONUS_EXTENDED # Bônus para vertical
+
+            effective_extended_time = current_extended_base * (1 + (self.priority_factor * MAX_PRIORITY_FACTOR_EFFECT))
+            effective_extended_time = max(TIME_GREEN_MIN, effective_extended_time)
+            if self.time_in_current_phase >= effective_extended_time: return True
+            return False 
+
+        if self.logic_is_alternating and demand_on_current > 0:
+            lost_advantage_condition = False
+            if is_vertical_phase_group:
+                lost_advantage_condition = demand_on_current <= (demand_on_conflicting - VERTICAL_ADVANTAGE_BONUS)
+            else:
+                lost_advantage_condition = demand_on_current <= demand_on_conflicting
+            
+            if lost_advantage_condition and self.time_in_current_phase >= TIME_GREEN_MIN + 5 : return True
+
+        current_normal_base = TIME_GREEN_NORMAL_BASE
+        if is_vertical_phase_group:
+            current_normal_base += NS_GREEN_TIME_BONUS_NORMAL # Bônus para vertical
+
+        effective_normal_time = current_normal_base * (1 + (self.priority_factor * MAX_PRIORITY_FACTOR_EFFECT / 2.0))
+        effective_normal_time = max(TIME_GREEN_MIN, effective_normal_time)
+        if self.time_in_current_phase >= effective_normal_time: return True
+            
+        if self.logic_is_alternating and demand_on_conflicting > (demand_on_current + VEHICLE_DIFFERENCE_FOR_PRESSURE_SWITCH):
+            return True
+            
+        return False
+
+    def execute_phase_transition(self):
+        # ... (o restante deste método permanece o mesmo da versão anterior, pois a lógica de decisão está em should_terminate_current_green)
+        if not self.valid_program or not self.main_green_phase_indices: return
+        active_green_idx = self.get_active_green_phase_index()
+        if active_green_idx is None or active_green_idx >= len(self.all_phases_definitions) : return
+        
+        target_phase_idx = -1
+        current_phase_duration_from_def = self.all_phases_definitions[self.current_phase_index].duration
+
+        try:
+            if self.current_phase_index == active_green_idx:
+                if self.should_terminate_current_green():
+                    target_phase_idx = self.yellow_after_green.get(active_green_idx)
+                    if self.current_main_green_group_idx_ptr == 0: self.accumulated_per_approach["W"] = 0; self.accumulated_per_approach["E"] = 0
+                    elif self.logic_is_alternating: self.accumulated_per_approach["N"] = 0; self.accumulated_per_approach["S"] = 0
+                    if target_phase_idx is None:
+                        if self.logic_is_alternating: self.current_main_green_group_idx_ptr = (self.current_main_green_group_idx_ptr + 1) % len(self.main_green_phase_indices)
+                        target_phase_idx = self.get_active_green_phase_index()
+            
+            elif self.current_phase_index is not None and active_green_idx is not None and \
+                 self.yellow_after_green.get(active_green_idx) is not None and \
+                 self.current_phase_index == self.yellow_after_green.get(active_green_idx):
+                actual_yellow_duration = max(1, min(int(current_phase_duration_from_def), TIME_YELLOW_DURATION)) if current_phase_duration_from_def > 0 else TIME_YELLOW_DURATION
+                if self.time_in_current_phase >= actual_yellow_duration:
+                    target_phase_idx = self.all_red_after_yellow.get(self.current_phase_index)
+                    if target_phase_idx is None: 
+                        if self.logic_is_alternating: self.current_main_green_group_idx_ptr = (self.current_main_green_group_idx_ptr + 1) % len(self.main_green_phase_indices)
+                        target_phase_idx = self.get_active_green_phase_index()
+
+            elif self.current_phase_index is not None and self.current_phase_index in self.all_red_after_yellow.values():
+                actual_all_red_duration = max(1, min(int(current_phase_duration_from_def), TIME_ALL_RED_DURATION)) if current_phase_duration_from_def > 0 else TIME_ALL_RED_DURATION
+                if self.time_in_current_phase >= actual_all_red_duration:
+                    if self.logic_is_alternating: self.current_main_green_group_idx_ptr = (self.current_main_green_group_idx_ptr + 1) % len(self.main_green_phase_indices)
+                    target_phase_idx = self.get_active_green_phase_index()
+            
+            elif self.time_in_current_phase > (current_phase_duration_from_def + TIME_GREEN_MIN + 15) : 
+                print(f"TLS {self.tls_id}: Recuperando de fase presa {self.current_phase_index} (duração def: {current_phase_duration_from_def}) após {self.time_in_current_phase}s")
+                if self.logic_is_alternating: self.current_main_green_group_idx_ptr = (self.current_main_green_group_idx_ptr + 1) % len(self.main_green_phase_indices)
+                target_phase_idx = self.get_active_green_phase_index()
+
+            if target_phase_idx != -1 and target_phase_idx is not None and target_phase_idx < self.num_total_phases:
+                if self.current_phase_index != target_phase_idx:
+                    traci.trafficlight.setPhase(self.tls_id, target_phase_idx)
+                    self.current_phase_index = target_phase_idx
+                    self.time_in_current_phase = 0
+        except traci.TraCIException as e:
+            if self.tls_id in TLS_IDS: print(f"TLS {self.tls_id}: Erro ao tentar mudar fase ({self.current_phase_index} -> {target_phase_idx}): {e}")
+        self.priority_factor = 0.0
+
+    def step(self, current_sim_step):
+        if not self.valid_program: return
+        self.time_in_current_phase += 1
+        self.update_detectors()
+        self.execute_phase_transition()
+
+class CentralCoordinator:
+    def __init__(self, controllers_map): self.controllers_map = controllers_map
+    def step_coordination(self, current_sim_step):
+        if current_sim_step % COORDINATOR_INTERVAL == 0:
+            pressures = {}
+            for tls_id, c in self.controllers_map.items():
+                if c.valid_program and c.logic_is_alternating:
+                    if hasattr(c, 'get_pressure_metric') and callable(c.get_pressure_metric):
+                        pressures[tls_id] = c.get_pressure_metric()
+                if hasattr(c, 'set_priority_factor') and callable(c.set_priority_factor): # Checa se o método existe
+                    c.set_priority_factor(0.0)
+            if not pressures: return
+            
+            max_pressure_tls_id = max(pressures, key=pressures.get)
+            max_pressure_value = pressures[max_pressure_tls_id]
+
+            if max_pressure_value > (VEHICLE_THRESHOLD_FOR_EXTENSION * 1.5):
+                controller_to_adjust = self.controllers_map.get(max_pressure_tls_id)
+                if controller_to_adjust and hasattr(controller_to_adjust, 'set_priority_factor') and callable(controller_to_adjust.set_priority_factor):
+                     controller_to_adjust.set_priority_factor(-0.7)
+
+def reroute_arrived_vehicles():
+    # ... (este método permanece o mesmo da versão anterior)
+    global vehicle_traversal_counts
+    if not AVAILABLE_ROUTE_IDS: return
+    try:
+        arrived_ids = traci.simulation.getArrivedIDList()
+        for veh_id in arrived_ids:
+            current_traversals = vehicle_traversal_counts.get(veh_id, 0) + 1
+            vehicle_traversal_counts[veh_id] = current_traversals
+            
+            if veh_id in traci.vehicle.getIDList():
+                if current_traversals < 2: 
+                    current_route_id = traci.vehicle.getRouteID(veh_id)
+                    possible_new_routes = [r for r in AVAILABLE_ROUTE_IDS if r != current_route_id]
+                    if not possible_new_routes and AVAILABLE_ROUTE_IDS:
+                        possible_new_routes = AVAILABLE_ROUTE_IDS 
+                    
+                    if possible_new_routes:
+                        new_route_id = random.choice(possible_new_routes)
+                        try:
+                            new_route_edges = traci.route.getEdges(new_route_id)
+                            if new_route_edges:
+                                traci.vehicle.changeTarget(veh_id, new_route_edges[-1])
+                                traci.vehicle.setRouteID(veh_id, new_route_id)
+                            else:
+                                if veh_id in traci.vehicle.getIDList(): traci.vehicle.remove(veh_id, reason=traci.constants.REMOVE_ARRIVED)
+                        except traci.TraCIException:
+                            if veh_id in traci.vehicle.getIDList(): traci.vehicle.remove(veh_id, reason=traci.constants.REMOVE_ARRIVED)
+                    elif veh_id in traci.vehicle.getIDList():
+                         traci.vehicle.remove(veh_id, reason=traci.constants.REMOVE_ARRIVED)
+                else:
+                    if veh_id in traci.vehicle.getIDList(): traci.vehicle.remove(veh_id, reason=traci.constants.REMOVE_ARRIVED)
+                    if veh_id in vehicle_traversal_counts: del vehicle_traversal_counts[veh_id]
+    except traci.TraCIException: pass
+
+
+def is_traci_connected():
+    try:
+        traci.simulation.getTime()
+        return True
+    except (traci.TraCIException, AttributeError, TypeError, ConnectionRefusedError, BrokenPipeError):
+        return False
+
+def collect_simulation_data(step, controllers_map):
+    # ... (este método permanece o mesmo da versão anterior, já coleta CO2)
+    if step % 60 == 0:
+        if not is_traci_connected(): 
+            print(f"AVISO: Conexão TraCI perdida no passo {step} antes de collect_simulation_data.")
+            return
+
+        total_vehicles_now, total_co2_for_step_g_per_s, current_total_waiting_time_s, teleported_this_step = 0, 0.0, 0.0, 0
+        all_vehicles = []
+        try:
+            total_vehicles_now = traci.vehicle.getIDCount()
+            all_vehicles = traci.vehicle.getIDList()
+        except traci.TraCIException as e: print(f"AVISO: Erro ao obter contagem/lista de veículos no passo {step}: {e}")
+
+        if all_vehicles:
+            try:
+                for vehID in all_vehicles:
+                    try: total_co2_for_step_g_per_s += traci.vehicle.getCO2Emission(vehID)
+                    except traci.TraCIException: pass
+                    try: current_total_waiting_time_s += traci.vehicle.getWaitingTime(vehID)
+                    except traci.TraCIException: pass
+            except traci.TraCIException as e: print(f"AVISO: Erro ao iterar veículos para CO2/Espera no passo {step}: {e}")
+        try:
+            teleported_this_step = len(traci.simulation.getStartingTeleportIDList())
+        except traci.TraCIException as e: print(f"AVISO: Erro ao coletar TeleportedVehicles no passo {step}: {e}")
+
+        active_tls_data = []
+        for tls_id, controller in controllers_map.items():
+            if not controller.valid_program: continue
+            q_w, q_e, q_n, q_s = 0,0,0,0
+            try:
+                if controller.detectors.get("W"): q_w = traci.lane.getLastStepHaltingNumber(traci.inductionloop.getLaneID(controller.detectors["W"]))
+                if controller.detectors.get("E"): q_e = traci.lane.getLastStepHaltingNumber(traci.inductionloop.getLaneID(controller.detectors["E"]))
+                if controller.detectors.get("N"): q_n = traci.lane.getLastStepHaltingNumber(traci.inductionloop.getLaneID(controller.detectors["N"]))
+                if controller.detectors.get("S"): q_s = traci.lane.getLastStepHaltingNumber(traci.inductionloop.getLaneID(controller.detectors["S"]))
+            except traci.TraCIException: pass
+            active_tls_data.append({
+                "tls_id": tls_id, "current_phase_index": controller.current_phase_index,
+                "accumulated_ew": controller.accumulated_per_approach.get("W",0) + controller.accumulated_per_approach.get("E",0),
+                "accumulated_ns": controller.accumulated_per_approach.get("N",0) + controller.accumulated_per_approach.get("S",0),
+                "queue_W": q_w, "queue_E": q_e, "queue_N": q_n, "queue_S": q_s
+            })
+        SIMULATION_DATA.append({
+            "step": step, "total_vehicles_network": total_vehicles_now,
+            "co2_emission": round(total_co2_for_step_g_per_s, 2),
+            "total_system_waiting_time": round(current_total_waiting_time_s, 1),
+            "teleported_vehicles_this_step": teleported_this_step, "tls_data": active_tls_data
+        })
+
+def run_simulation():
+    controllers_map = {}
+    sumo_started = False
+    global vehicle_traversal_counts, SIMULATION_DATA, AVAILABLE_ROUTE_IDS
+    vehicle_traversal_counts = {}
+    SIMULATION_DATA = []
+    AVAILABLE_ROUTE_IDS = []
+
+    current_max_steps = SIMULATION_TOTAL_DURATION_SECONDS 
+
+    try:
+        print("\n--- INICIANDO SIMULAÇÃO SUMO ---")
+        print("Lembrete: Para dados de CO2 precisos em 'emission.xml' e via TraCI,")
+        print("certifique-se que 'emissionClass' está definido para os <vType> no seu arquivo de rotas (ex: .rou.xml).")
+        print(f"Exemplo: <vType id=\"carro_popular\" emissionClass=\"HBEFA3/PC_G_EU4\" ... />\n")
+        
+        sumo_cmd = [SUMO_BINARY, "-c", SUMO_CONFIG_FILE, "--step-length", "1",
+                    "--log", "sumo_run.log", "--error-log", "sumo_error.log",
+                    "--duration-log.disable", "true", "--no-step-log", "true",
+                    "--tripinfo-output", "tripinfo.xml", "--emission-output", "emission.xml",
+                    "--waiting-time-memory", "1000",
+                    "--seed", str(random.randint(1,10000)) ]
+        traci.start(sumo_cmd)
+        sumo_started = True
+        print(f"SUMO iniciado com o comando: {' '.join(sumo_cmd)}")
+        
+        AVAILABLE_ROUTE_IDS = traci.route.getIDList()
+        if not AVAILABLE_ROUTE_IDS:
+            print("ALERTA CRÍTICO: Nenhuma rota carregada do SUMO! Veículos não poderão ser re-roteados.")
+        else:
+            print(f"Rotas disponíveis para re-roteamento: {len(AVAILABLE_ROUTE_IDS)}")
+
+        for tls_id in TLS_IDS:
+            detectors = DETECTOR_MAPPING.get(tls_id, {})
+            if not detectors and tls_id not in ["A0","D0","A3","D3"]:
+                 print(f"AVISO: Detectores não mapeados para TLS: {tls_id}")
+            try:
+                controller = TrafficLightController(tls_id, detectors)
+                if controller.valid_program: controllers_map[tls_id] = controller
+                else: print(f"Controlador para {tls_id} não foi adicionado.")
+            except Exception as e_controller:
+                print(f"ERRO CRÍTICO ao inicializar controlador para {tls_id}: {e_controller}.")
+                import traceback; traceback.print_exc()
+        
+        if not controllers_map:
+            print("Nenhum controlador de semáforo foi inicializado com sucesso. Encerrando.")
+            if sumo_started and is_traci_connected(): traci.close()
+            return
+
+        coordinator = CentralCoordinator(controllers_map)
+        print(f"{len(controllers_map)} controladores de semáforo e 1 coordenador de tráfego criados.")
+        
+        print(f"Iniciando loop de simulação por até {current_max_steps} passos...")
+        step = 0
+        while True: 
+            try:
+                if not is_traci_connected():
+                    print(f"Conexão TraCI perdida ANTES do passo {step}. Encerrando simulação.")
+                    break
+                
+                min_expected_vehicles = traci.simulation.getMinExpectedNumber()
+                
+                reached_target_step = step >= current_max_steps
+                no_more_vehicles = min_expected_vehicles <= 0 and step > 60 
+
+                if reached_target_step or no_more_vehicles:
+                    if no_more_vehicles and not reached_target_step:
+                         print(f"Não há mais veículos esperados na simulação no passo {step}.")
+                    elif reached_target_step:
+                         print(f"Tempo de simulação programado ({current_max_steps} passos) atingido.")
+
+                    if PROMPT_FOR_SIMULATION_EXTENSION:
+                        try:
+                            user_input = input(f"Deseja estender a simulação por mais {SIMULATION_EXTENSION_INCREMENT_SECONDS} passos? (s/n): ").strip().lower()
+                            if user_input == 's':
+                                current_max_steps += SIMULATION_EXTENSION_INCREMENT_SECONDS
+                                print(f"Simulação estendida. Novo total de passos alvo: {current_max_steps}")
+                            else:
+                                print("Encerrando simulação por escolha do usuário.")
+                                break 
+                        except EOFError: 
+                             print("Nenhuma entrada do usuário detectada (EOF), encerrando simulação.")
+                             break
+                        except KeyboardInterrupt:
+                             print("Entrada interrompida, encerrando simulação.")
+                             break
+                    else: 
+                        if reached_target_step: print("Limite de passos atingido e prompt desabilitado.")
+                        elif no_more_vehicles: print("Veículos acabaram e prompt desabilitado.")
+                        break 
+                
+                if step > current_max_steps: break
+
+                traci.simulationStep()
+                step += 1
+            except traci.TraCIException as e:
+                print(f"Erro TraCI durante simulationStep() no passo {step}: {e}. Encerrando."); break
+            except AttributeError as e_attr: 
+                print(f"Conexão TraCI perdida no passo {step} (AttributeError: {e_attr}). Encerrando."); break
+            except KeyboardInterrupt:
+                print(f"Simulação interrompida pelo usuário no passo {step}.")
+                break
+            except Exception as e_sim_step:
+                print(f"Erro inesperado no loop de simulação no passo {step}: {e_sim_step}. Encerrando.");
+                import traceback; traceback.print_exc()
+                break
+
+            reroute_arrived_vehicles()
+            for controller_id, controller in controllers_map.items():
+                try: 
+                    if controller.valid_program:
+                        controller.step(step)
+                except Exception as e_ctrl_step: print(f"Erro no step do controlador {controller_id}: {e_ctrl_step}")
+            try: coordinator.step_coordination(step)
+            except Exception as e_coord_step: print(f"Erro no step do coordenador: {e_coord_step}")
+            
+            collect_simulation_data(step, controllers_map)
+            
+            if step % 300 == 0: 
+                active_vehicles_count = "N/A"
+                try:
+                    if sumo_started and is_traci_connected(): 
+                        active_vehicles_count = traci.vehicle.getIDCount()
+                except: pass 
+                print(f"Simulação no passo: {step}/{current_max_steps} (Veículos ativos: {active_vehicles_count})")
+        
+        if step >= current_max_steps and not (min_expected_vehicles <= 0 and step > 60):
+             print(f"Tempo de simulação ({current_max_steps} passos) concluído.")
+
+    except traci.FatalTraCIError as e: print(f"Erro Fatal TraCI: {e}. Verifique sumo_error.log e sumo_run.log.")
+    except traci.TraCIException as e: print(f"Erro TraCI (possivelmente na inicialização): {e}")
+    except KeyboardInterrupt: print("Simulação interrompida pelo usuário (durante setup).")
+    except Exception as e: print(f"Erro Inesperado durante a configuração ou simulação: {e}"); import traceback; traceback.print_exc()
+    finally:
+        if sumo_started:
+            if is_traci_connected():
+                try: traci.close(); print("Conexão TraCI fechada.")
+                except Exception as e_close: print(f"Exceção ao tentar fechar TraCI: {e_close}")
+            else: print("Conexão TraCI não estava ativa ou já havia sido fechada no momento de finalizar.")
+        else: print("SUMO não iniciou corretamente ou a conexão falhou no início.")
+        print("Simulação finalizada.")
+
+        if SIMULATION_DATA:
+            output_dir_for_data = "dashboard_output" 
+            if not os.path.exists(output_dir_for_data): os.makedirs(output_dir_for_data)
+            data_file_path = os.path.join(output_dir_for_data, "simulation_dashboard_data.json")
+            try:
+                with open(data_file_path, "w") as f: json.dump(SIMULATION_DATA, f, indent=4)
+                print(f"Dados da simulação salvos em {data_file_path}")
+            except Exception as e_save_json:
+                print(f"ERRO ao salvar dados da simulação em JSON: {e_save_json}")
+        else: print("Nenhum dado de simulação foi coletado para salvar.")
+
+if __name__ == "__main__":
+    print("Iniciando script de controle da simulação SUMO...")
+    if not os.path.exists(SUMO_CONFIG_FILE):
+        print(f"ERRO CRÍTICO: Arquivo de configuração do SUMO '{SUMO_CONFIG_FILE}' não encontrado! Verifique o caminho.")
+        sys.exit(1)
+    run_simulation()

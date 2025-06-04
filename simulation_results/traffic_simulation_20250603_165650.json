@@ -1,0 +1,8522 @@
+[
+  {
+    "step": 10,
+    "vehicles": 49,
+    "waiting_time": 11.0,
+    "co2": 203801.3967285639,
+    "time_loss": 180.29858317222113,
+    "completed_trips": 0,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 0,
+        "queues": {
+          "N": 1,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.48
+      },
+      {
+        "tls_id": "A2",
+        "phase": 0,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.48
+      },
+      {
+        "tls_id": "B0",
+        "phase": 0,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.48
+      },
+      {
+        "tls_id": "B1",
+        "phase": 2,
+        "queues": {
+          "N": 2,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.48
+      },
+      {
+        "tls_id": "B2",
+        "phase": 2,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.48
+      },
+      {
+        "tls_id": "B3",
+        "phase": 0,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.48
+      },
+      {
+        "tls_id": "C0",
+        "phase": 0,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.48
+      },
+      {
+        "tls_id": "C1",
+        "phase": 2,
+        "queues": {
+          "N": 2,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.48
+      },
+      {
+        "tls_id": "C2",
+        "phase": 2,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.48
+      },
+      {
+        "tls_id": "C3",
+        "phase": 0,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.48
+      },
+      {
+        "tls_id": "D1",
+        "phase": 0,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.48
+      },
+      {
+        "tls_id": "D2",
+        "phase": 0,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.48
+      }
+    ]
+  },
+  {
+    "step": 20,
+    "vehicles": 55,
+    "waiting_time": 93.0,
+    "co2": 168733.98085424156,
+    "time_loss": 385.8171124151294,
+    "completed_trips": 0,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 0,
+        "queues": {
+          "N": 2,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.5538461538461539
+      },
+      {
+        "tls_id": "A2",
+        "phase": 0,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.5538461538461539
+      },
+      {
+        "tls_id": "B0",
+        "phase": 0,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.5538461538461539
+      },
+      {
+        "tls_id": "B1",
+        "phase": 2,
+        "queues": {
+          "N": 4,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.5538461538461539
+      },
+      {
+        "tls_id": "B2",
+        "phase": 2,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.5538461538461539
+      },
+      {
+        "tls_id": "B3",
+        "phase": 0,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.5538461538461539
+      },
+      {
+        "tls_id": "C0",
+        "phase": 0,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.5538461538461539
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 7,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.5538461538461539
+      },
+      {
+        "tls_id": "C2",
+        "phase": 2,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.5538461538461539
+      },
+      {
+        "tls_id": "C3",
+        "phase": 0,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.5538461538461539
+      },
+      {
+        "tls_id": "D1",
+        "phase": 0,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.5538461538461539
+      },
+      {
+        "tls_id": "D2",
+        "phase": 0,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.5538461538461539
+      }
+    ]
+  },
+  {
+    "step": 30,
+    "vehicles": 61,
+    "waiting_time": 307.0,
+    "co2": 132105.56863188543,
+    "time_loss": 694.4723235087766,
+    "completed_trips": 0,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 2,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.6315789473684211
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.6315789473684211
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.6315789473684211
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 7,
+          "S": 0,
+          "E": 0,
+          "W": 4
+        },
+        "priority": 0.6315789473684211
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.6315789473684211
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.6315789473684211
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.6315789473684211
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 10,
+          "S": 0,
+          "E": 0,
+          "W": 4
+        },
+        "priority": 0.6315789473684211
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 1
+        },
+        "priority": 0.6315789473684211
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.6315789473684211
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.6315789473684211
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.6315789473684211
+      }
+    ]
+  },
+  {
+    "step": 40,
+    "vehicles": 66,
+    "waiting_time": 677.0,
+    "co2": 192233.80026863352,
+    "time_loss": 1181.3294396184697,
+    "completed_trips": 1,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 2,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.672
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.672
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.672
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 10,
+          "S": 0,
+          "E": 0,
+          "W": 4
+        },
+        "priority": 0.672
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.672
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 1,
+          "W": 0
+        },
+        "priority": -0.672
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.672
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 10,
+          "S": 0,
+          "E": 0,
+          "W": 8
+        },
+        "priority": 0.672
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 3,
+          "S": 0,
+          "E": 0,
+          "W": 5
+        },
+        "priority": 0.672
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.672
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.672
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.672
+      }
+    ]
+  },
+  {
+    "step": 50,
+    "vehicles": 67,
+    "waiting_time": 1107.0,
+    "co2": 192483.06126034673,
+    "time_loss": 1658.6696168641552,
+    "completed_trips": 1,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 2,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.672
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.672
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.672
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 10,
+          "S": 0,
+          "E": 0,
+          "W": 4
+        },
+        "priority": 0.672
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.672
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 1,
+          "W": 0
+        },
+        "priority": -0.672
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.672
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 10,
+          "S": 0,
+          "E": 0,
+          "W": 8
+        },
+        "priority": 0.672
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 3,
+          "S": 0,
+          "E": 0,
+          "W": 5
+        },
+        "priority": 0.672
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.672
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.672
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.672
+      }
+    ]
+  },
+  {
+    "step": 60,
+    "vehicles": 68,
+    "waiting_time": 1538.0,
+    "co2": 182116.53744189462,
+    "time_loss": 2111.6438847719173,
+    "completed_trips": 0,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 2,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.672
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.672
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.672
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 10,
+          "S": 0,
+          "E": 0,
+          "W": 4
+        },
+        "priority": 0.672
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.672
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 1,
+          "W": 0
+        },
+        "priority": -0.672
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.672
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 10,
+          "S": 0,
+          "E": 0,
+          "W": 8
+        },
+        "priority": 0.672
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 3,
+          "S": 0,
+          "E": 0,
+          "W": 5
+        },
+        "priority": 0.672
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.672
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.672
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.672
+      }
+    ]
+  },
+  {
+    "step": 70,
+    "vehicles": 69,
+    "waiting_time": 1910.0,
+    "co2": 176836.27821173667,
+    "time_loss": 2641.748249739538,
+    "completed_trips": 0,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 2,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.6666666666666667
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.6666666666666667
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.6666666666666667
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 10,
+          "S": 0,
+          "E": 0,
+          "W": 4
+        },
+        "priority": 0.6666666666666667
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.6666666666666667
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.6666666666666667
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.6666666666666667
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 9,
+          "S": 0,
+          "E": 0,
+          "W": 8
+        },
+        "priority": 0.6666666666666667
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 3,
+          "S": 0,
+          "E": 0,
+          "W": 5
+        },
+        "priority": 0.6666666666666667
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.6666666666666667
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.6666666666666667
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.6666666666666667
+      }
+    ]
+  },
+  {
+    "step": 80,
+    "vehicles": 69,
+    "waiting_time": 1426.0,
+    "co2": 201017.79295051796,
+    "time_loss": 3187.6471748143563,
+    "completed_trips": 0,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 2,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.4
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.4
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.4
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 4,
+          "S": 0,
+          "E": 0,
+          "W": 4
+        },
+        "priority": 0.4
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.4
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.4
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.4
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 8
+        },
+        "priority": 0.4
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 2,
+          "S": 0,
+          "E": 0,
+          "W": 5
+        },
+        "priority": 0.4
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.4
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.4
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.4
+      }
+    ]
+  },
+  {
+    "step": 90,
+    "vehicles": 68,
+    "waiting_time": 1492.0,
+    "co2": 167526.3720729079,
+    "time_loss": 3618.2031835717785,
+    "completed_trips": 0,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 2,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 4
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 8
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 5
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      }
+    ]
+  },
+  {
+    "step": 100,
+    "vehicles": 68,
+    "waiting_time": 891.0,
+    "co2": 191167.40024197253,
+    "time_loss": 4083.4024264999175,
+    "completed_trips": 0,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 1,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 2
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 1,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 5
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      }
+    ]
+  },
+  {
+    "step": 110,
+    "vehicles": 73,
+    "waiting_time": 885.0,
+    "co2": 189750.39086299427,
+    "time_loss": 4461.039175825861,
+    "completed_trips": 0,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 1,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 3,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 2
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 1,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 6,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      }
+    ]
+  },
+  {
+    "step": 120,
+    "vehicles": 60,
+    "waiting_time": 1294.0,
+    "co2": 169757.26232070252,
+    "time_loss": 3925.2329400987537,
+    "completed_trips": 0,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 1,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 5,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 2
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 1,
+          "S": 0,
+          "E": 0,
+          "W": 2
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 8,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      }
+    ]
+  },
+  {
+    "step": 130,
+    "vehicles": 54,
+    "waiting_time": 1675.0,
+    "co2": 136152.2897874334,
+    "time_loss": 3840.077292976938,
+    "completed_trips": 0,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 1,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 5,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 1,
+          "S": 0,
+          "E": 0,
+          "W": 4
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 8,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      }
+    ]
+  },
+  {
+    "step": 140,
+    "vehicles": 52,
+    "waiting_time": 2125.0,
+    "co2": 126581.52525773166,
+    "time_loss": 4115.755610592193,
+    "completed_trips": 0,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 1,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 5,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 1,
+          "S": 0,
+          "E": 0,
+          "W": 5
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 8,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      }
+    ]
+  },
+  {
+    "step": 150,
+    "vehicles": 51,
+    "waiting_time": 2590.0,
+    "co2": 134129.98430013788,
+    "time_loss": 4582.4806259428515,
+    "completed_trips": 1,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 1,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 5,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 2,
+          "S": 0,
+          "E": 0,
+          "W": 5
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 8,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      }
+    ]
+  },
+  {
+    "step": 160,
+    "vehicles": 50,
+    "waiting_time": 2992.0,
+    "co2": 129011.76918780855,
+    "time_loss": 5050.920235044763,
+    "completed_trips": 0,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 1,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 5,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 1,
+          "S": 0,
+          "E": 0,
+          "W": 5
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 8,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      }
+    ]
+  },
+  {
+    "step": 170,
+    "vehicles": 49,
+    "waiting_time": 3216.0,
+    "co2": 133371.08251297253,
+    "time_loss": 5486.092775544075,
+    "completed_trips": 0,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 4,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 5
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 7,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      }
+    ]
+  },
+  {
+    "step": 180,
+    "vehicles": 48,
+    "waiting_time": 2840.0,
+    "co2": 139677.878379424,
+    "time_loss": 5873.670760167143,
+    "completed_trips": 0,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 5
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      }
+    ]
+  },
+  {
+    "step": 190,
+    "vehicles": 45,
+    "waiting_time": 2815.0,
+    "co2": 132468.9445874377,
+    "time_loss": 5749.419296970972,
+    "completed_trips": 1,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      }
+    ]
+  },
+  {
+    "step": 200,
+    "vehicles": 37,
+    "waiting_time": 3075.0,
+    "co2": 97906.26635871718,
+    "time_loss": 4868.549246727264,
+    "completed_trips": 1,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      }
+    ]
+  },
+  {
+    "step": 210,
+    "vehicles": 37,
+    "waiting_time": 3335.0,
+    "co2": 99135.07354642331,
+    "time_loss": 4171.348111535766,
+    "completed_trips": 0,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      }
+    ]
+  },
+  {
+    "step": 220,
+    "vehicles": 35,
+    "waiting_time": 3595.0,
+    "co2": 84020.58479990496,
+    "time_loss": 4117.345724867791,
+    "completed_trips": 0,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      }
+    ]
+  },
+  {
+    "step": 230,
+    "vehicles": 35,
+    "waiting_time": 3855.0,
+    "co2": 89310.36839901442,
+    "time_loss": 4384.644486629901,
+    "completed_trips": 0,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      }
+    ]
+  },
+  {
+    "step": 240,
+    "vehicles": 35,
+    "waiting_time": 4115.0,
+    "co2": 81870.31530085597,
+    "time_loss": 4653.775689142853,
+    "completed_trips": 0,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      }
+    ]
+  },
+  {
+    "step": 250,
+    "vehicles": 35,
+    "waiting_time": 4383.0,
+    "co2": 91886.66111458739,
+    "time_loss": 4930.422800765974,
+    "completed_trips": 0,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 1
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      }
+    ]
+  },
+  {
+    "step": 260,
+    "vehicles": 33,
+    "waiting_time": 4653.0,
+    "co2": 83391.21069188512,
+    "time_loss": 5190.690381560447,
+    "completed_trips": 0,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 1
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      }
+    ]
+  },
+  {
+    "step": 270,
+    "vehicles": 32,
+    "waiting_time": 4923.0,
+    "co2": 80944.13697559862,
+    "time_loss": 5460.187551602402,
+    "completed_trips": 0,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 1
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      }
+    ]
+  },
+  {
+    "step": 280,
+    "vehicles": 28,
+    "waiting_time": 5193.0,
+    "co2": 75340.68880871855,
+    "time_loss": 5705.7887725106175,
+    "completed_trips": 0,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 1
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      }
+    ]
+  },
+  {
+    "step": 290,
+    "vehicles": 27,
+    "waiting_time": 5463.0,
+    "co2": 70867.49999999996,
+    "time_loss": 5959.203125777538,
+    "completed_trips": 0,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 1
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      }
+    ]
+  },
+  {
+    "step": 300,
+    "vehicles": 27,
+    "waiting_time": 5733.0,
+    "co2": 70867.49999999996,
+    "time_loss": 6229.203125777538,
+    "completed_trips": 0,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 1
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      }
+    ]
+  },
+  {
+    "step": 310,
+    "vehicles": 34,
+    "waiting_time": 6003.0,
+    "co2": 85349.08549037164,
+    "time_loss": 6517.190377960298,
+    "completed_trips": 0,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 1
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      }
+    ]
+  },
+  {
+    "step": 320,
+    "vehicles": 34,
+    "waiting_time": 6273.0,
+    "co2": 88862.79325304659,
+    "time_loss": 6787.301679475012,
+    "completed_trips": 0,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 1
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      }
+    ]
+  },
+  {
+    "step": 330,
+    "vehicles": 34,
+    "waiting_time": 6543.0,
+    "co2": 90209.76333041844,
+    "time_loss": 7057.62981015207,
+    "completed_trips": 0,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 1
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      }
+    ]
+  },
+  {
+    "step": 340,
+    "vehicles": 34,
+    "waiting_time": 6813.0,
+    "co2": 82504.26735730977,
+    "time_loss": 7327.791575898326,
+    "completed_trips": 0,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 1
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      }
+    ]
+  },
+  {
+    "step": 350,
+    "vehicles": 30,
+    "waiting_time": 7083.0,
+    "co2": 73715.72324460365,
+    "time_loss": 7594.318115761592,
+    "completed_trips": 1,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 1
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      }
+    ]
+  },
+  {
+    "step": 360,
+    "vehicles": 29,
+    "waiting_time": 7052.0,
+    "co2": 70579.78948499996,
+    "time_loss": 7860.560673676555,
+    "completed_trips": 0,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 1
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      }
+    ]
+  },
+  {
+    "step": 370,
+    "vehicles": 24,
+    "waiting_time": 4589.0,
+    "co2": 69101.21263062784,
+    "time_loss": 6807.309213323659,
+    "completed_trips": 0,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 1
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      }
+    ]
+  },
+  {
+    "step": 380,
+    "vehicles": 22,
+    "waiting_time": 2078.0,
+    "co2": 54299.640587370224,
+    "time_loss": 6352.215201979746,
+    "completed_trips": 0,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 1
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 1,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      }
+    ]
+  },
+  {
+    "step": 390,
+    "vehicles": 22,
+    "waiting_time": 58.0,
+    "co2": 54317.15791829229,
+    "time_loss": 6523.236855153571,
+    "completed_trips": 0,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 1,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      }
+    ]
+  },
+  {
+    "step": 400,
+    "vehicles": 22,
+    "waiting_time": 158.0,
+    "co2": 59120.37216762979,
+    "time_loss": 6711.503212805975,
+    "completed_trips": 0,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      }
+    ]
+  },
+  {
+    "step": 410,
+    "vehicles": 30,
+    "waiting_time": 336.0,
+    "co2": 75457.39425965805,
+    "time_loss": 6933.918200825966,
+    "completed_trips": 0,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      }
+    ]
+  },
+  {
+    "step": 420,
+    "vehicles": 30,
+    "waiting_time": 536.0,
+    "co2": 76714.754836628,
+    "time_loss": 7139.675451650219,
+    "completed_trips": 0,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      }
+    ]
+  },
+  {
+    "step": 430,
+    "vehicles": 30,
+    "waiting_time": 736.0,
+    "co2": 73739.1635298836,
+    "time_loss": 7347.29239108857,
+    "completed_trips": 0,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      }
+    ]
+  },
+  {
+    "step": 440,
+    "vehicles": 29,
+    "waiting_time": 943.0,
+    "co2": 71221.97501413125,
+    "time_loss": 7557.864069184504,
+    "completed_trips": 0,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      }
+    ]
+  },
+  {
+    "step": 450,
+    "vehicles": 28,
+    "waiting_time": 1153.0,
+    "co2": 66275.592663626,
+    "time_loss": 7768.508511636334,
+    "completed_trips": 0,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      }
+    ]
+  },
+  {
+    "step": 460,
+    "vehicles": 26,
+    "waiting_time": 1365.0,
+    "co2": 66138.08414344974,
+    "time_loss": 7980.437133568852,
+    "completed_trips": 0,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      }
+    ]
+  },
+  {
+    "step": 470,
+    "vehicles": 24,
+    "waiting_time": 1595.0,
+    "co2": 62892.91125655633,
+    "time_loss": 8199.152289421552,
+    "completed_trips": 1,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      }
+    ]
+  },
+  {
+    "step": 480,
+    "vehicles": 24,
+    "waiting_time": 1825.0,
+    "co2": 63009.483529023295,
+    "time_loss": 8429.926527680822,
+    "completed_trips": 0,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      }
+    ]
+  },
+  {
+    "step": 490,
+    "vehicles": 23,
+    "waiting_time": 2055.0,
+    "co2": 60368.61111111108,
+    "time_loss": 8652.804917335277,
+    "completed_trips": 0,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      }
+    ]
+  },
+  {
+    "step": 500,
+    "vehicles": 23,
+    "waiting_time": 2285.0,
+    "co2": 60368.61111111108,
+    "time_loss": 8882.804917335277,
+    "completed_trips": 0,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      }
+    ]
+  },
+  {
+    "step": 510,
+    "vehicles": 31,
+    "waiting_time": 2515.0,
+    "co2": 78736.35402473061,
+    "time_loss": 9131.552086342632,
+    "completed_trips": 0,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      }
+    ]
+  },
+  {
+    "step": 520,
+    "vehicles": 31,
+    "waiting_time": 2745.0,
+    "co2": 72063.23753850795,
+    "time_loss": 9364.51102454186,
+    "completed_trips": 0,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      }
+    ]
+  },
+  {
+    "step": 530,
+    "vehicles": 31,
+    "waiting_time": 2975.0,
+    "co2": 81857.1047409329,
+    "time_loss": 9597.24070694693,
+    "completed_trips": 0,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      }
+    ]
+  },
+  {
+    "step": 540,
+    "vehicles": 31,
+    "waiting_time": 3205.0,
+    "co2": 78263.27043268862,
+    "time_loss": 9830.072675177717,
+    "completed_trips": 0,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      }
+    ]
+  },
+  {
+    "step": 550,
+    "vehicles": 30,
+    "waiting_time": 3443.0,
+    "co2": 77187.03957864277,
+    "time_loss": 10078.289442544308,
+    "completed_trips": 0,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      }
+    ]
+  },
+  {
+    "step": 560,
+    "vehicles": 29,
+    "waiting_time": 3693.0,
+    "co2": 73198.45051791561,
+    "time_loss": 10325.875365799124,
+    "completed_trips": 0,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      }
+    ]
+  },
+  {
+    "step": 570,
+    "vehicles": 27,
+    "waiting_time": 3943.0,
+    "co2": 67863.58202643151,
+    "time_loss": 10566.433328132442,
+    "completed_trips": 0,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      }
+    ]
+  },
+  {
+    "step": 580,
+    "vehicles": 26,
+    "waiting_time": 4199.0,
+    "co2": 68242.76123701212,
+    "time_loss": 10817.495529278853,
+    "completed_trips": 0,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      }
+    ]
+  },
+  {
+    "step": 590,
+    "vehicles": 26,
+    "waiting_time": 4459.0,
+    "co2": 68242.77777777774,
+    "time_loss": 11077.495515997129,
+    "completed_trips": 0,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      }
+    ]
+  },
+  {
+    "step": 600,
+    "vehicles": 26,
+    "waiting_time": 4719.0,
+    "co2": 68242.77777777774,
+    "time_loss": 11337.495515997129,
+    "completed_trips": 0,
+    "tls_data": [
+      {
+        "tls_id": "A1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "A2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "B1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "B3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C0",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "C1",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C2",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": -0.8
+      },
+      {
+        "tls_id": "C3",
+        "phase": 3,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "D1",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      },
+      {
+        "tls_id": "D2",
+        "phase": 5,
+        "queues": {
+          "N": 0,
+          "S": 0,
+          "E": 0,
+          "W": 0
+        },
+        "priority": 0.8
+      }
+    ]
+  }
+]

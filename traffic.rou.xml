@@ -1,0 +1,38 @@
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="car" accel="2.6" decel="4.5" sigma="0.5" length="5" minGap="2.5" maxSpeed="13.89" color="yellow"/>
+    <vType id="motorcycle" accel="3.0" decel="5.0" sigma="0.5" length="2.5" minGap="1.5" maxSpeed="16.67" guiShape="motorcycle" color="red"/>
+    <vType id="bus" accel="1.5" decel="3.0" sigma="0.5" length="12" minGap="3.0" maxSpeed="11.11" guiShape="bus" color="green"/>
+
+    <route id="R_H_A0_D0" edges="A0B0 B0C0 C0D0"/>
+    <route id="R_H_D0_A0" edges="D0C0 C0B0 B0A0"/>
+    <route id="R_H_A1_D1" edges="A1B1 B1C1 C1D1"/>
+    <route id="R_H_D1_A1" edges="D1C1 C1B1 B1A1"/>
+    <route id="R_H_A2_D2" edges="A2B2 B2C2 C2D2"/>
+    <route id="R_H_D2_A2" edges="D2C2 C2B2 B2A2"/>
+    <route id="R_H_A3_D3" edges="A3B3 B3C3 C3D3"/>
+    <route id="R_H_D3_A3" edges="D3C3 C3B3 B3A3"/>
+
+    <route id="R_V_A0_A3" edges="A0A1 A1A2 A2A3"/>
+    <route id="R_V_A3_A0" edges="A3A2 A2A1 A1A0"/>
+    <route id="R_V_B0_B3" edges="B0B1 B1B2 B2B3"/>
+    <route id="R_V_B3_B0" edges="B3B2 B2B1 B1B0"/>
+    <route id="R_V_C0_C3" edges="C0C1 C1C2 C2C3"/>
+    <route id="R_V_C3_C0" edges="C3C2 C2C1 C1C0"/>
+    <route id="R_V_D0_D3" edges="D0D1 D1D2 D2D3"/>
+    <route id="R_V_D3_D0" edges="D3D2 D2D1 D1D0"/>
+
+    <route id="R_Loop_Outer_CW" edges="A0B0 B0C0 C0D0 D0D1 D1D2 D2D3 D3C3 C3B3 B3A3 A3A2 A2A1 A1A0"/>
+    <route id="R_Loop_Inner_B1C1C2B2_CW" edges="B1C1 C1C2 C2B2 B2B1"/>
+
+    <flow id="F_cars_H_A0D0" type="car" route="R_H_A0_D0" number="10" begin="0" end="1" departLane="random" departPos="random"/>
+    <flow id="F_cars_H_A1D1" type="car" route="R_H_A1_D1" number="10" begin="0" end="1" departLane="random" departPos="random"/>
+    <flow id="F_cars_V_B0B3" type="car" route="R_V_B0_B3" number="10" begin="0" end="1" departLane="random" departPos="random"/>
+    <flow id="F_cars_V_C0C3" type="car" route="R_V_C0_C3" number="10" begin="0" end="1" departLane="random" departPos="random"/>
+    <flow id="F_cars_LoopOuter" type="car" route="R_Loop_Outer_CW" number="20" begin="0" end="1" departLane="random" departPos="random"/>
+    
+    <flow id="F_moto_H_A2D2" type="motorcycle" route="R_H_A2_D2" number="5" begin="0" end="1" departLane="random" departPos="random"/>
+    <flow id="F_moto_LoopInner" type="motorcycle" route="R_Loop_Inner_B1C1C2B2_CW" number="5" begin="0" end="1" departLane="random" departPos="random"/>
+
+    <flow id="F_bus_V_A0A3" type="bus" route="R_V_A0_A3" number="2" begin="0" end="1" departLane="random" departPos="random"/>
+    <flow id="F_bus_H_D3A3" type="bus" route="R_H_D3_A3" number="2" begin="0" end="1" departLane="random" departPos="random"/>
+</routes>
